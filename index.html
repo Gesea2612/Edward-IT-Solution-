@@ -1,39 +1,240 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Edward IT Solution & Computer Technology</title>
-<link rel="stylesheet" href="edo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward IT Solution & Computer Technology</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background-color: var(--dark-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .hero {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        
+        .hero img {
+            width: 1400px;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .content-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-link {
+                padding: 0.8rem 1rem;
+                width: 100%;
+                text-align: center;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<form name="submit" id="submit" action="" method="get">
-<h1 align="center">Welcome to Edward IT Solution& Computer Technology</h1>
+    <header>
+        <div class="container">
+            <h1>Welcome to Edward IT Solution & Computer Technology</h1>
             <p>Your trusted partner for all IT needs and computer training.</p>
-            At Edward IT Solution, we are dedicated to providing top-notch computer services and comprehensive IT training. Whether you're looking to repair your computer, build a new system, or enhance your IT skills, we have the expertise and resources to help you succeed. Our experienced team is committed to delivering excellent service and support.
-            </p>
-<table border=1 width=100% height=100px align=center>
-<tr>
-<td colspan=13><center><img src="mine.png" width=1200px height=250px></center></td></tr>
-<tr>
-<td><center> <button ><a href="index.html">Home</button></a></center></td>
-<td><center> <button ><a href="services.html">Our Services</button></a></center></td>
-<td><center> <button ><a href="contact.html">Contact.us</button></a></center></td>
-<td><center> <button ><a href="locations.html">Our Location</button></a></center></td>
-
-</tr>
-</table>
-<p>At Edward IT Solution Computer Center, we are dedicated to empowering individuals and<br>
-businesses in Mwanza and beyond with cutting-edge technology and reliable IT support.<br>
-With a commitment to excellence and a deep understanding of the local landscape,
-we provide a wide range of computer services, solutions,<br> and training to help you thrive in the digital age.</p>
-<p> Edward IT Solution Computer Center we offer the following services
-<ul type="square">
-<li>Computer Sales & Servicing:</li>
-<li>New Desktops & Laptops (Leading Brands)</li>
-<li>Custom-Built Systems</li>
-<li>Hardware Upgrades & Repairs</li>
-<li>Troubleshooting & Diagnostics</li>
-<li>Genuine Parts & Accessories</li>
-   <footer>
-        <p align="center"> &copy; 2025 Edward IT Solution Computer Center. All rights reserved.</p>
-    </footer> 
+        </div>
+    </header>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Our Services</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="locations.html" class="nav-link">Our Location</a>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <img src="pxl.jpg" alt="Edward IT Solution Services">
+    </div>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Edward IT Solution Computer Center, we are dedicated to empowering individuals and businesses in Mwanza and beyond with cutting-edge technology and reliable IT support. With a commitment to excellence and a deep understanding of the local landscape, we provide a wide range of computer services, solutions, and training to help you thrive in the digital age.</p>
+        </div>
+    </section>
+    
+    <section class="content-section" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Computer Sales & Servicing</h3>
+                    <p>New desktops and laptops from leading brands with professional setup and configuration.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Custom-Built Systems</h3>
+                    <p>Tailored computer systems built to your exact specifications and requirements.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware Upgrades</h3>
+                    <p>Professional hardware upgrades and repairs to extend your device's lifespan.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Troubleshooting</h3>
+                    <p>Comprehensive diagnostics and troubleshooting for all computer issues.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Genuine Accessories</h3>
+                    <p>High-quality, genuine parts and accessories for all your computing needs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>IT Training</h3>
+                    <p>Comprehensive IT training programs to enhance your digital skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Edward IT Solution Computer Center. All rights reserved.</p>
+            <div style="margin-top: 1rem;">
+                <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
